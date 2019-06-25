@@ -63,7 +63,7 @@ def getPhone():
         k = des(appSecret[:8], CBC, "00000000", pad=None, padmode=PAD_PKCS5)
         ret['res'] = k.decrypt(base64.b64decode(ret['res']))
 
-    return data
+    return ret
 
 if __name__ == "__main__":
     print getPhone()
