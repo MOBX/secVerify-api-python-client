@@ -8,8 +8,8 @@ from pyDes import *
 
 url = "http://identify.verify.mob.com/auth/auth/sdkClientFreeLogin"
 
-appkey = "moba6b6c6d6"
-appSecret = "b89d2427a3bc7ad1aea1e1e8c1d36bf3"
+appkey = ""
+appSecret = ""
 token = "59616292321333248"
 opToken = "opToken"
 operator = "CUCC"
@@ -63,7 +63,7 @@ def getPhone():
         k = des(appSecret[:8], CBC, "00000000", pad=None, padmode=PAD_PKCS5)
         ret['res'] = k.decrypt(base64.b64decode(ret['res']))
 
-    return data
+    return ret
 
 if __name__ == "__main__":
     print getPhone()
