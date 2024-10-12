@@ -6,7 +6,7 @@ import time
 import urllib.request, sys, re, os, json
 from pyDes import *
 
-url = "http://identify.verify.mob.com/auth/auth/sdkClientFreeLogin"
+url = "http://identify-auth.zztfly.com/auth/auth/sdkClientFreeLogin"
 
 appkey = ""
 appSecret = ""
